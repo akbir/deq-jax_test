@@ -1,3 +1,3 @@
 [submodule "deq-jax"]
-	path = deq-jax
+	path = deq_jax
 	url = https://github.com/akbir/deq-jax
