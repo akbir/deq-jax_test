@@ -3,8 +3,8 @@ import jax
 import numpy as np
 import torch
 
-from test.torch_implementation.torch_brydon import th_broyden, th_rmatvec, th_matvec
-from src.modules.broyden import broyden, rmatvec, matvec
+from deq_torch.brydon import th_broyden, th_rmatvec, th_matvec
+from deq_jax.src.modules.broyden import broyden, rmatvec, matvec
 
 
 class TestBroyden:

@@ -8,8 +8,8 @@ import jax.numpy as jnp
 import numpy as np
 from jax import value_and_grad
 
-from src.model.train import build_forward_fn, lm_loss_fn
-from src.modules.rootfind import rootfind
+from deq_jax.src.model.train import build_forward_fn, lm_loss_fn
+from deq_jax.src.modules.rootfind import rootfind
 
 
 def test_simple_rootfind():
