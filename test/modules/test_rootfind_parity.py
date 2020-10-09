@@ -6,7 +6,7 @@ import torch
 from jax import value_and_grad, grad
 import torch.nn as nn
 
-from modules.rootfind import rootfind
+from deq_jax.src.modules.rootfind import rootfind
 from deq_torch.rootfind import DEQModule, RootFind
 
 def test_parity():
