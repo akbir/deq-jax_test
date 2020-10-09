@@ -4,10 +4,10 @@ import jax.numpy as jnp
 import numpy as np
 import torch
 from jax import value_and_grad, grad
-from torch import nn
+import torch.nn as nn
 
-from src.modules.rootfind import rootfind
-from src.legacy.torch_rootfind import DEQModule, RootFind
+from modules.rootfind import rootfind
+from torch.rootfind import DEQModule, RootFind
 
 def test_parity():
     def layer(x, w):

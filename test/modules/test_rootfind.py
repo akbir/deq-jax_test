@@ -3,7 +3,7 @@ from typing import Optional
 import jax
 from jax import value_and_grad
 
-from src.modules.rootfind import rootfind, h
+from deq_jax.src.modules.rootfind import rootfind, h
 import jax.numpy as jnp
 import haiku as hk
 
