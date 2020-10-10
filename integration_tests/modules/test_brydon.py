@@ -7,7 +7,7 @@ from deq_torch.brydon import th_broyden, th_rmatvec, th_matvec
 from deq_jax.src.modules.broyden import broyden, rmatvec, matvec
 
 
-class TestBroyden:
+class TestBroydenIntegration:
     def test_optima(self):
         def quadratic(x):
             return x ** 2
