@@ -20,7 +20,7 @@ def test_simple_rootfind():
             tokens = data['obs']
             def g(x):
                 return x ** 2
-            return rootfind(g, tokens, max_iter)
+            return rootfind(g, tokens,, max_iter
         return forward_fn
 
     rng = jax.random.PRNGKey(42)
@@ -56,7 +56,7 @@ def test_transform_with_rng_update_fails():
 
             output_embedding = transformer(tokens)
             # Apply rootfind
-            hidden = rootfind(func, output_embedding, max_iter)
+            hidden = rootfind(func, output_embedding,, max_iter
             return hk.Linear(vocab_size)(hidden)
 
         return forward_fn
